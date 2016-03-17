@@ -1,0 +1,22 @@
+metadata:
+    name:apps 
+    format: "Lava-Test-Shell Test Definition 1.0"
+    description: "Test lamp on Linux Linaro ubuntu. "
+    maintainer:
+        - hongxin_228@163.com 
+    os:
+        - ubuntu
+    devices:
+        - D02
+    environment:
+        - lava-test-shell
+run:
+    steps:
+
+        - "./test_DNS.sh"
+
+
+
+
+
+
