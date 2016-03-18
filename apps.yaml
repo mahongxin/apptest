@@ -1,0 +1,23 @@
+metadata:
+    name: apps
+    format: "Lava-Test-Shell Test Definition 1.0"
+    description: "Run tests from apps suite on Ubuntu"
+    maintainer:
+        - hongxin_228@163.com
+    os:
+        - ubuntu
+    scope:
+        - functional
+    devices:
+        - d02
+    environment:
+        - lava-test-shell
+
+install:
+    deps:
+        - expect
+
+run:
+    steps:
+        - "./test_DNS.sh"
+
